@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:400,700');
+
+/* Then, update your CSS selectors with the new font-family */
+.title h2, .hero h1, .content h3 {
+    font-family: 'Great Vibes', cursive;
+}
+
+body, .nav ul li a, .content p, .title p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main {
+    margin: 40px 0;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 80%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.icon img {
+    width: 50px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+button.bounce {
+  animation: bounce 1s;
+}
+
+.team {
+    display:flex
+}
