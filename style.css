@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:400,700');
 
 /* Updated CSS with improvements */
@@ -101,13 +102,15 @@
     padding: 50px 20px; /* Increased padding to add height */
     /* Or you can set a specific height */
     height: 500px;
+   
+
 }
 @keyframes wave-animation {
     0%, 60%, 100% {
       transform: translateY(0);
     }
     30% {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
     }
   }
   
@@ -118,11 +121,13 @@
     margin-top: 40px;
     margin-bottom: 0px;
     overflow: hidden;
+
     /* Apply the animation to each letter */
     span {
       display: inline-block;
       animation: wave-animation 1.5s infinite;
       animation-delay: calc(0.1s * var(--i));
+      animation-duration: 2s;
     }
   }
  .hero h1 span:nth-child(1) { color: var(--primary-color) } /* First letter */
@@ -153,32 +158,45 @@
 
 .hero button:hover {
     background-color: var(--hover-color);
+    animation: bounce 1s;
 }
 
+  
 .image img {
     width: 80%;
 }
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card {
     width: 300px;
     height: auto;
-    border: 0.1pt solid #e0e0e0;
+    border: 0.1pt solid #c0c0c0;
     border-radius: 10px;
-    box-shadow: (20px 12px 50px #255C47);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     /* Smooth transition for hover effect */
     transition: transform 0.4s ease;
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
     box-shadow: (0px  30px 10px #255C47);
+    transition: 0.3s;
+    
 }
-
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+    transition: 0.3s; /* Added transition */
+  }
+  
+  
 .icon {
     display: flex;
     justify-content: center;
@@ -242,3 +260,64 @@ button.bounce {
         margin-bottom: 20px;
     }
 }
+
+
+/* Add this at the end of your CSS file */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Reduce the font size of the title and the hero text */
+
+.logo img{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+    .title h2{
+        font-size: 3em;
+    } 
+    .hero h1{
+        font-size: 3em;
+        align-items: center;
+        margin-top: 37%;
+    } 
+    .hero p {
+      font-size: 2em;
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* Hide the navigation bar */
+    .nav {
+      display:none;
+    }
+  
+    /* Make the grid one column */
+    .cards {
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Reduce the width and height of the card icons */
+    .icon img {
+      width: 40px;
+      align-items: center;
+    }
+
+  }
+  
+  /* For screens between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    /* Reduce the font size of the title and the hero text */
+    .title h2, .hero h1, .hero p {
+      font-size: 0.9em;
+    }
+  
+    /* Reduce the width and height of the card icons */
+    .icon img {
+      width: 50px;
+    }
+  }
+  
