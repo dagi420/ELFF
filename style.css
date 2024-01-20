@@ -587,16 +587,16 @@ button.bounce {
 }
 
 .right{
-	padding: 25px 50px 25px 1px;
+	padding: 38px 50px 14px 59px;
 }
 
-h2{
+.container-box h2{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
-h2:after{
+.container-box h2:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -660,19 +660,8 @@ textarea{
 	
 
 
-  .footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    color: #99ffd6;
-    border-top: 1px solid #e5e5e5;
-    background-image: url(./assets/img/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   
- 
+}
   
 
   
@@ -680,3 +669,284 @@ textarea{
   
   
     /*_________Footer________________*/
+
+    
+    .footer {
+      bottom:0;
+      left:0;
+      position:fixed;
+        width: 100%;
+        height: 3em;
+        overflow:hidden;
+      
+        background-color: beige;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin:0 auto;
+      -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      z-index:999;
+    }
+    .footer:hover {
+      -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      height: 13.5em;
+    }
+  
+    .footer #cont{
+      position:relative;
+      top:-5px;
+      right:190px;
+      width:150px;
+      height:auto;
+      margin:0 auto;
+    }
+    
+
+    .footer h2{
+      font-family: 'Great Vibes';
+      font-size: 42px;
+      position: relative;
+      margin-bottom: 7px;
+      margin-top: 22px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+    .footer h2:hover {
+      color:#255C47; /* replace #f00 with the desired color code */
+    }
+    
+
+    .footer__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      max-width: max-content;
+      background-color:#255C47;
+      border-radius: 100px;
+      color: #141414;
+      font-weight: bolder;
+      line-height: 0;
+      margin: 0.6em 0;
+      font-size: 1rem;
+      padding: 0 1.3em;
+    }
+    
+    .footer ul {
+      list-style: none;
+      padding-left: 110px;
+      align-self: center;
+    }
+    
+    .footer li {
+      line-height: 2em;
+    }
+    
+    .footer a {
+      text-decoration: none;
+    }
+    
+
+    .footer p {
+      width: 470%;
+      height: 500%;
+      padding-left: -32px;
+      padding-top: 11px;
+  }
+    .footer__nav {
+      display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .footer__nav > * {
+      flex: 1 50%;
+      margin-right: 1.25em;
+    }
+    
+    .nav__ul a {
+      color: #999;
+    }
+  
+    .main {
+      display: absolute;
+      align-items: center;
+      height: 50%;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.25em;
+  }
+  
+  .up {
+      display: flex;
+      flex-direction: row;
+      gap: 0.25em;
+  }
+  
+  .down {
+      display: flex;
+      flex-direction: row;
+      gap: 0.25em;
+  }
+  
+  .card1 {
+      width: 65px;
+      height: 65px;
+      margin-top: 2px;
+    
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 90px 5px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+      margin-top: 0.75em;
+      margin-left: 0.6em;
+      fill: #cc39a4;
+  }
+  
+  .card2 {
+      width: 65px;
+      height: 65px;
+      margin-top: 2px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 90px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+      margin-top: 0.75em;
+      margin-left: -.45em;
+      fill: #03A9F4;
+  }
+  
+  .card3 {
+      width: 65px;
+      height: 65px;
+      margin-top: 2px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 5px 5px 90px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+  }
+  
+  .github {
+      margin-top: -.3em;
+      margin-left: 0.6em;
+  }
+  
+  .card4 {
+      width: 65px;
+      height: 65px;
+      margin-top: 2px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 5px 90px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+  }
+  
+  .discord {
+      margin-top: -.45em;
+      margin-left: -0.6em;
+      fill: #8c9eff;
+  }
+  
+  .card1:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+      fill: white;
+  }
+  
+  .card2:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+      fill: white;
+  }
+  
+  .card3:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: black;
+  }
+  
+  .card3:hover .github {
+      fill: white;
+  }
+  
+  .card4:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+      fill: white;
+  }
+  
+    
+    .legal {
+      display: block;
+      color:#000000;
+      font-weight: 200;
+      font-size: small; 
+   
+      margin-bottom: 0px;
+      margin-left: 50px;
+    }
+    .legal p{
+      text-align: center;
+    }
+    
+@media screen and (max-width: 700px){
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2px 69px 10px 0px;
+    color: beige;
+    background-image: src("./");
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  } 
+  .footer p {
+    margin: 12px 0px -8px 6px;
+}
+}
+  
+
+      .footer__addr {
+        flex: 1 0px;
+      }
+    
+      .footer__nav {
+        flex: 2 0px;
+      }
+      
+      
+    

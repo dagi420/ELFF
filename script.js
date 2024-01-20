@@ -114,3 +114,6 @@ const initSlider = () => {
   
   window.addEventListener("resize", initSlider);
   window.addEventListener("load", initSlider);
+
+  // Twitter @MadsBHaakansson
+// MadsHaakansson.dk
