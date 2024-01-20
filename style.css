@@ -8,7 +8,7 @@
     --primary-color: #255C47;
     --text-color: #333;
     --subtext-color: #666;
-    --background-color: #eee;
+    --background-color: beige;
     --hover-color: #255C47;
 }
 
@@ -717,7 +717,7 @@ textarea{
       margin-bottom: 7px;
       margin-top: 22px;
       text-align: center;
-      color: rgb(0, 0, 0);
+      color: h#000000
     }
     .footer h2:hover {
       color:#255C47; /* replace #f00 with the desired color code */
@@ -927,15 +927,15 @@ textarea{
     display: flex;
     flex-flow: row wrap;
     padding: 2px 69px 10px 0px;
-    color: beige;
-    background-image: src("./");
-    border-top: 1px solid #e5e5e5;
+    background-image: url("./assets/img/Hero-bg.jpeg");
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    color: white;
   } 
-  .footer p {
-    margin: 12px 0px -8px 6px;
+  .footer h2 {
+    
+    color: white;
 }
 }
   
